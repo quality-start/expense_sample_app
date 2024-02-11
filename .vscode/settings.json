@@ -1,0 +1,16 @@
+{
+  // @see: https://zenn.dev/k9i/articles/0c169499f15b0c
+  "dart.flutterSdkPath": "flutter_sdk",
+  // 検索対象から生成ファイルを除外する
+  "search.exclude": {
+    "**/*.freezed.dart": true,
+    "**/*.g.dart": true
+  },
+  // ファイルをまとめる
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "*.dart": "$(capture).g.dart, $(capture).freezed.dart"
+  },
+  "java.compile.nullAnalysis.mode": "disabled"
+}
