@@ -1,7 +1,9 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
-class MonthlySummaryWidget extends StatelessWidget {
-  const MonthlySummaryWidget({super.key});
+@RoutePage()
+class MonthlySummaryPage extends StatelessWidget {
+  const MonthlySummaryPage({super.key});
 
   @override
   Widget build(BuildContext context) {

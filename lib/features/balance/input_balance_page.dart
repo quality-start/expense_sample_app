@@ -1,7 +1,8 @@
-import 'package:expenses_app/core/components/calculator.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:expenses_app/core/model/balance.dart';
 import 'package:expenses_app/core/model/balance_category.dart';
 import 'package:expenses_app/core/model/balance_type.dart';
+import 'package:expenses_app/features/balance/components/calculator.dart';
 import 'package:expenses_app/util/extension.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -15,8 +16,9 @@ const category = [
   BalanceCategory(id: 4, categoryName: '副業', balanceType: BalanceType.income),
 ];
 
-class InputBalanceWidget extends HookConsumerWidget {
-  const InputBalanceWidget({super.key});
+@RoutePage()
+class InputBalancePage extends HookConsumerWidget {
+  const InputBalancePage({super.key});
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final balance = useState(Balance(createdAt: DateTime.now()));
