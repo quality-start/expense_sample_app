@@ -8,6 +8,7 @@ class HomePage extends HookConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
+      // TODO: AutoRouteを採用する
       body: const InputBalanceWidget(),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
